@@ -1,7 +1,7 @@
 <p align="center"><img src="http://brito.com.ve/hv/images/pic.png"></p>
 
 
-## APP SISCOM - Sistema de control de Fuerza de Ventas
+## APP SISCOM - Sistema de control de Fuerza de Ventas | JAVA Nativo + Android Studio + PHP
 
 <br/>
 Ing. Marco Brito :.<br/>
