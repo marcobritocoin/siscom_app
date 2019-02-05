@@ -1,0 +1,168 @@
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+-->
+<!--
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      tools:context=".MainActivity">-->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <!-- Comment this ImageView after you have handled the image background with Java at the Activity-->
+    <!--    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/background"
+            android:scaleType="centerCrop"
+            android:id="@+id/formBack"
+            />-->
+
+    <ImageView
+        android:id="@+id/formLogo"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_logo2" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formLogo"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/trans_white_rectangle"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:text="SISCOM"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/usuario"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_user_icon"
+                android:drawablePadding="5dp"
+                android:hint="Usuario"
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/Clave"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_pass_icon"
+                android:drawablePadding="5dp"
+                android:hint="Contraseña"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textSize="14sp"
+
+                />
+
+            <ProgressBar
+                android:id="@+id/progreso"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_ingresar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Ingresar"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="www.startgroup.es"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

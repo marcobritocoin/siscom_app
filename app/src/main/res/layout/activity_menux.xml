@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:background="@color/colorFondo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="@drawable/bsuperior2"
+                android:gravity="bottom"
+                android:text=".."
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="18sp" />
+
+            <!-- Fila Usuario-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/e_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="right"
+                        android:text="Usuario:   mbrito  "
+                        android:textColor="@color/colorBlueJeans"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cerrar_sesion"
+                        android:layout_width="match_parent"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="1dp"
+                        android:gravity="right"
+                        android:text="Cerrar Sesión   "
+                        android:textColor="@color/colorBitterSweetDark"
+                        android:textSize="14sp" />
+
+                    <!--
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/white"
+                        android:padding="8dp"
+                        android:text="Saldo en Billetera Virtual"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" /> -->
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Fin de Fila Usuario -->
+
+
+
+
+
+
+            <!-- Fila TITULO MENU-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/e_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="left"
+                        android:text="MENU"
+                        android:textColor="@color/colorBlueJeans"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Fin de TITULO MENU -->
+
+
+
+
+
+            <!-- FILA BOTONERA MENU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/Visitas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorFlower"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/tienda2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorFlowerDark"
+                        android:padding="8dp"
+                        android:text="Registrar Visita"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/Rutas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorFlower"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/map" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorFlowerDark"
+                        android:padding="8dp"
+                        android:text="Mapa de Visitas"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- fin de FILA BOTONES -->
+
+
+            <!-- Fila TITULO MENU2-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/e_usuario"
+                        android:layout_width="match_parent"
+                        android:layout_height="19dp"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="1dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="left"
+                        android:text="RECORD"
+                        android:textColor="@color/colorBlueJeans"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- Fin de TITULO MENU2 -->
+
+
+
+            <!-- FILA RESULTADOS -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <LinearLayout
+                    android:id="@+id/Visitas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorFlower"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cont_visitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorFlowerDark"
+                        android:padding="8dp"
+                        android:text="Visitas"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorFlower">
+
+                    <TextView
+                        android:id="@+id/cont_ventas"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorFlowerDark"
+                        android:padding="8dp"
+                        android:text="Ventas"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/Rutas"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorFlower"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cont_consigna"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15dp"
+                        android:text="0"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="40sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="20dp"
+                        android:background="@color/colorFlowerDark"
+                        android:padding="8dp"
+                        android:text="Consignación"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!-- fin de FILA RESULTADOS -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/scrollView"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="www.startgroup.es"
+                android:textColor="@color/grey" />
+
+            <!-- Third Row-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+
+            </LinearLayout>
+            <!-- End Third Row-->
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".Main2Activity">
+
+    <ImageView
+        android:id="@+id/formLogo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_logo2" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/formLogo">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/trans_white_rectangle"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:paddingBottom="15dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="15dp"
+                android:text="REGISTRO DE CLIENTE"
+                android:textColor="@color/grey"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <AutoCompleteTextView
+                android:id="@+id/cliente"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_store_mall_directory"
+                android:drawablePadding="5dp"
+                android:hint="Nombre del Comercio"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/persona_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_person_add"
+                android:drawablePadding="5dp"
+                android:hint="Persona de Contacto"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/tlf"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="5dp"
+                android:hint="Teléfono"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_alternate_email"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/tipo_comercio"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp" />
+
+            <Spinner
+                android:id="@+id/fin_visita"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/expositor"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"/>
+
+            <AutoCompleteTextView
+                android:id="@+id/cant_pedido"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_format_list_numbered"
+                android:drawablePadding="5dp"
+                android:hint="Cantidad"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/observacion"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_hearing"
+                android:drawablePadding="5dp"
+                android:hint="Observación"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <ProgressBar
+                android:id="@+id/progreso2"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/btn_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Guardar"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="www.startgroup.es"
+        android:textColor="@color/grey" />
+
+</RelativeLayout>
